@@ -61,7 +61,7 @@ history对象由Router创建，用来保持对当前位置的追踪还有页面�
 
 ### exact
 
-这里要加exact，不加exact的话 http://localhost:3000/clothes，http://localhost:3000/clothes/woman，http://localhost:3000/clothes/man，都会匹配到第一行的path="/clothes"，即渲染的都是Woman组件。除非换顺序，把path='/clothes'换到最后面。
+这里要加exact，不加exact的话 http://localhost:3000/clothes、http://localhost:3000/clothes/woman，http://localhost:3000/clothes/man，都会匹配到第一行的path="/clothes"，即渲染的都是Woman组件。除非换顺序，把path='/clothes'换到最后面。
 
     <Switch>
       <Route path="/clothes" exact component={Woman} />
@@ -172,13 +172,13 @@ ps: 这里的state只在pathname === match url时才会有
 
 ## Switch
 
-  如下代码：加上``Switch``标签，在页面中只渲染出当前匹配的dom，匹配到一个之后就不忘下走了。不加``Switch``, 在http://localhost:3000/clothes/woman 中会渲染出两个``Woman``组件。
+如下代码：加上``Switch``标签，在页面中只渲染出当前匹配的dom，匹配到一个之后就不忘下走了。不加``Switch``, 在http://localhost:3000/clothes/woman 中会渲染出两个``Woman``组件。
 
-  <Switch>
-      <Route path="/clothes" exact component={Woman} />
-      <Route path="/clothes/woman" component={Woman} />
-      <Route path="/clothes/woman" component={Woman}/>
-  </Switch>
+    <Switch>
+        <Route path="/clothes" exact component={Woman} />
+        <Route path="/clothes/woman" component={Woman} />
+        <Route path="/clothes/woman" component={Woman}/>
+    </Switch>
 
 ## < Redirect >
 
@@ -196,9 +196,9 @@ ps: 这里的state只在pathname === match url时才会有
 [[译]简明React Router v4教程
 ](https://juejin.im/post/5a7e9ee7f265da4e7832949c)
 
-4.0教程：http://reacttraining.cn/web/example/basic
+[4.0教程](http://reacttraining.cn/web/example/basic)
 
-嵌套路由：https://juejin.im/post/5a641747518825732d7fb25f
+[React Router 4 简介及其背后的路由哲学](https://juejin.im/post/5a641747518825732d7fb25f)
 
 
 
